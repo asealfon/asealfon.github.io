@@ -29,13 +29,25 @@
     {
     font-family: Lucida Sans Unicode;
     }
-    .table
-    {
-    width:70%;
-    margin-left:15%;
-    margin-right:15%;
-    font-family: arial;
-    background-color:white;
+    @media(min-width: 601px) {
+      .table
+      {
+      width:70%;
+      margin-left:15%;
+      margin-right:15%;
+      font-family: arial;
+      background-color:white;
+      }
+    }
+    @media(max-width: 600px) {
+      .table
+      {
+      width:96%;
+      margin-left:2%;
+      margin-right:2%;
+      font-family: arial;
+      background-color:white;
+      }
     }
 
   </style>
