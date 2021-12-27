@@ -5,8 +5,7 @@
   <meta name="Author" content="Adam Sealfon"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-  <title>Adam Sealfon's Homepage</title>
-  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title>Adam Sealfon's homepage</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="google-site-verification" content="b2UyaMgx8BL-ABmB7Lq2qWMX03rSgdI2z8SLvwbNF3M" />
@@ -30,18 +29,23 @@
     font-family: Lucida Sans Unicode;
     }
     @media(min-width: 601px) {
-      .table
+      .tablediv
       {
       width:70%;
       margin-left:15%;
       margin-right:15%;
       font-family: arial;
       background-color:white;
+      border-spacing:30px 0px;
+      }
+      .mobile-break { display: none; }
+      .maintable {
+         border-spacing:2.5vw;
       }
     }
-    }
+    
     @media(max-width: 600px) {
-      .table
+      .tablediv
       {
       width:96%;
       margin-left:2%;
@@ -49,24 +53,30 @@
       font-family: arial;
       background-color:white;
       }
-    }
+      .maintable {
+         width:90.65%;
+      }
     }
 
+
+    
   </style>
 
 <body>
   <center>
-<div class="table">
-  <table border="0" cellspacing="20" style="width: 90.65%;">
-      <colgroup>
-        <col style="width: 70%;">
-        <col style="width: 30%;">
-      </colgroup>
+<div class="tablediv">
+  <table class="maintable">
 
   <tr>
   <td>
 
+
 <h1>Adam Sealfon</h1>
+
+<center>
+<img srcset="me.jpg 631w, me.jpg 631w" sizes="(min-width: 601px) 0vw, 50vw"/>
+</center>
+<br class="mobile-break">
 
 I am a postdoc at UC Berkeley working with 
 <a href='https://www.stat.berkeley.edu/~jsteinhardt/'>Jacob Steinhardt</a>
@@ -111,7 +121,7 @@ in computer science from Harvard University, where I was advised by
   </td><td>
   <br/>
   <center>
-  <img src="me.jpg" style="width:70%"/>
+  <img srcset="me.jpg 631w, me.jpg 631w" sizes="(min-width: 601px) 20vw, 0vw"/>
   </center>
   </td></tr>
 
