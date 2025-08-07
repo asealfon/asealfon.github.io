@@ -76,7 +76,39 @@
       }
     }
 
- 
+    /* Default styles for mobile screens */
+    .profile-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-photo {
+        width: 200px; /* Set a fixed size for the image on mobile */
+        height: auto;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-bottom: 20px; /* Add some space below the image */
+     }
+
+    /* Media query for larger screens */
+    @media (min-width: 768px) {
+        .profile-container {
+            flex-direction: row-reverse; /* Arrange items in a row */
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        .profile-photo {
+            height: 100%;
+            margin-left: 20px;
+            margin-bottom: 0;
+        }
+
+        .profile-text {
+            flex-grow: 1; /* Allows text to fill remaining space */
+        }
+    }
   </style>
 
 <body>
@@ -90,19 +122,17 @@
 
 <h1>Adam Sealfon</h1>
 
-<center>
-<img srcset="me.jpg 631w, me.jpg 631w" sizes="(min-width: 641px) 0vw, 200px"/>
-</center>
-<br class="mobile-break">
 
-I am a research scientist in the Algorithms team at <a href='https://research.google/'>Google Research</a>. 
+<div class="profile-container">
+
+<div><img src="me.jpg" alt="Adam Sealfon" class="profile-photo"/>
+</div>
+<div class="profile-text">
+<p>I am a research scientist in the Algorithms team at <a href='https://research.google/'>Google Research</a>. 
 I am currently working on problems related to differential privacy. I am also broadly interested in 
 algorithms, cryptography, and machine learning, particularly 
-provable guarantees for data privacy, robustness and security.
-
-<p>
-
-I received a PhD in computer science from MIT, where I was advised by 
+provable guarantees for data privacy, robustness and security.</p>
+<p>I received a PhD in computer science from MIT, where I was advised by 
 <a href='http://people.csail.mit.edu/shafi/'>Shafi Goldwasser</a> and was
 a member of the Theory of Computation 
 (<a href='https://toc.csail.mit.edu/'>TOC</a>) 
@@ -117,17 +147,9 @@ and
 <a href='https://people.eecs.berkeley.edu/~jordan/'>Michael Jordan</a>
 and affiliated with the Berkeley Artificial Intelligence Research 
 (<a href='https://bair.berkeley.edu/'>BAIR</a>) 
-group.
-
-<p>
-
-  </td><td>
-  <br/>
-  <center>
-  <img srcset="me.jpg 631w" sizes="(min-width: 641px) and (max-width: 960px) 35vw, (min-width: 961px) 20vw, 0vw"/>
-  </center>
-  </td></tr>
-
+group.</p>
+</div>
+</div>
 
 <tr>
 <td colspan="2">
