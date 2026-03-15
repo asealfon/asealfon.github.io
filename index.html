@@ -1,203 +1,176 @@
 <!DOCTYPE html>
-
-<html lang="en" style="webkit-text-size-adjust: 100%">
+<html lang="en">
 <head>
-  <meta name="Author" content="Adam Sealfon"/>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-
-  <title>Adam Sealfon's homepage</title>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="google-site-verification" content="b2UyaMgx8BL-ABmB7Lq2qWMX03rSgdI2z8SLvwbNF3M" />
-  <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Author" content="Adam Sealfon"/>
+    <title>Adam Sealfon's homepage</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <center>
-<div class="tablediv">
-  <table class="maintable">
+    <main class="container">
+        <header>
+            <h1>Adam Sealfon</h1>
+            <div class="profile-container">
+                <div class="profile-photo-wrapper">
+                    <img src="me.jpg" alt="Adam Sealfon" class="profile-photo"/>
+                </div>
+                <div class="profile-text">
+                    <p>I am a research scientist in the Algorithms team at <a href='https://research.google/'>Google Research</a>. 
+                    I am currently working on problems related to differential privacy. I am also broadly interested in 
+                    algorithms, cryptography, and machine learning, particularly 
+                    provable guarantees for data privacy, robustness and security.</p>
+                    
+                    <p>I received a PhD in computer science from MIT, where I was advised by 
+                    <a href='http://people.csail.mit.edu/shafi/'>Shafi Goldwasser</a> and was
+                    a member of the Theory of Computation 
+                    (<a href='https://toc.csail.mit.edu/'>TOC</a>) 
+                    and Cryptography and Information Security
+                    (<a href='https://toc.csail.mit.edu/cis'>CIS</a>)
+                    groups. I also have an AB in mathematics and an SM
+                    in computer science from Harvard University, where I was advised by
+                    <a href='https://salil.seas.harvard.edu/'>Salil Vadhan</a>.
+                    Before joining Google Research, I was a postdoc at UC Berkeley working with 
+                    <a href='https://www.stat.berkeley.edu/~jsteinhardt/'>Jacob Steinhardt</a>
+                    and
+                    <a href='https://people.eecs.berkeley.edu/~jordan/'>Michael Jordan</a>
+                    and affiliated with the Berkeley Artificial Intelligence Research 
+                    (<a href='https://bair.berkeley.edu/'>BAIR</a>) 
+                    group.</p>
+                </div>
+            </div>
+        </header>
 
-  <tr>
-  <td>
+        <section id="publications">
+            <h2>Publications</h2>
+            <p>See also <a href='https://dblp.uni-trier.de/pers/hd/s/Sealfon:Adam.html'>DBLP</a>
+            and <a href='https://scholar.google.com/citations?user=nrlhJMcAAAAJ&hl=en'>Google Scholar</a>.<br/>
+            <small>Authors are ordered alphabetically by last name.</small></p>
+            <ul class="pub-list">
+                
+            <li>
+                <strong>URANIA: Differentially Private Insights into AI Use</strong><br/>
+                Daogao Liu, Edith Cohen, Badih Ghazi, Peter Kairouz, Pritish Kamath, Alexander Knop, Ravi Kumar, Pasin Manurangsi, Adam Sealfon, Da Yu, and Chiyuan Zhang<br/>
+                <em>Conference on Language Modeling (COLM), 2025</em><br/>
+                Available at [<a href="https://arxiv.org/abs/2506.04681">arXiv</a>]
+            </li>
+            <li>
+                <strong>Individualized Privacy Accounting via Subsampling with Applications in Combinatorial Optimization</strong><br/>
+                Badih Ghazi, Pritish Kamath, Ravi Kumar, Pasin Manurangsi, and Adam Sealfon<br/>
+                <em>International Conference on Machine Learning (ICML), 2024</em><br/>
+                Available at [<a href="https://arxiv.org/abs/2405.18534">arXiv</a>]
+            </li>
+            <li>
+                <strong>Summary Reports Optimization in the Privacy Sandbox Attribution Reporting API</strong><br/>
+                Hidayet Aksu, Badih Ghazi, Pritish Kamath, Ravi Kumar, Pasin Manurangsi, Adam Sealfon, and Avinash V. Varadarajan<br/>
+                <em>Proceedings on Privacy Enhancing Technologies Symposium (PoPETS), 2024</em><br/>
+                Available at [<a href="https://arxiv.org/abs/2311.13586">arXiv</a>]
+            </li>
+            <li>
+                <strong>Scan, Shuffle, Rescan: Machine-Assisted Election Audits With Untrusted Scanners</strong><br/>
+                Douglas W. Jones, Sunoo Park, Ronald L. Rivest, and Adam Sealfon<br/>
+                <em>Financial Cryptography and Data Security (FC), 2024</em><br/>
+                Available at [<a href="https://eprint.iacr.org/2022/960">ePrint</a>]
+            </li>
+            <li>
+                <strong>On Computing Pairwise Statistics with Local Differential Privacy</strong><br/>
+                Badih Ghazi, Pritish Kamath, Ravi Kumar, Pasin Manurangsi, and Adam Sealfon<br/>
+                <em>Neural Information Processing Systems (NeurIPS), 2023</em><br/>
+                Available at [<a href="https://arxiv.org/abs/2406.16305">arXiv</a>]
+            </li>
+            <li>
+                <strong>Synchronizable Fair Exchange</strong><br/>
+                Ranjit Kumaresan, Srinivasan Raghuraman, and Adam Sealfon<br/>
+                <em>Theory of Cryptography Conference (TCC), 2023</em><br/>
+                Available at [<a href="https://eprint.iacr.org/2020/976">ePrint</a>]
+            </li>
+            <li>
+                <strong>Optimizing Hierarchical Queries for the Attribution Reporting API</strong><br/>
+                Matt Dawson, Badih Ghazi, Pritish Kamath, Kapil Kumar, Ravi Kumar, Bo Luan, Pasin Manurangsi, Nishanth Mundru, Harikesh Nair, Adam Sealfon, and Shengyu Zhu<br/>
+                <em>AdKDD Workshop at Knowledge Discovery and Data Mining (KDD), 2023</em><br/>
+                Available at [<a href="https://arxiv.org/abs/2308.13510">arXiv</a>]
+            </li>
+            <li>
+                <strong>Batch Verification for Statistical Zero Knowledge Proofs</strong><br/>
+                Inbar Kaslasi, Guy N. Rothblum, Ron D. Rothblum, Adam Sealfon, and Prashant Nalini Vasudevan<br/>
+                <em>Theory of Cryptography Conference (TCC), 2020</em><br/>
+                Available at [<a href="https://eprint.iacr.org/2020/1167">ePrint</a>, <a href="https://eccc.weizmann.ac.il/report/2020/147/">ECCC</a>]
+            </li>
+            <li>
+                <strong>Efficiently Estimating Erdős-Rényi Graphs with Node Differential Privacy</strong><br/>
+                Adam Sealfon and Jon Ullman<br/>
+                <em>Neural Information Processing Systems (NeurIPS), 2019</em><br/>
+                Invited to <em>Journal of Privacy and Confidentiality, 2021</em><br/>Available at [<a href="https://arxiv.org/abs/1905.10477">arXiv</a>]
+            </li>
+            <li>
+                <strong>It wasn't me! Repudiability and Claimability of Ring Signatures</strong><br/>
+                Sunoo Park and Adam Sealfon<br/>
+                <em>International Cryptology Conference (CRYPTO), 2019</em><br/>
+                Available at [<a href="https://eprint.iacr.org/2019/135">ePrint</a>]
+            </li>
+            <li>
+                <strong>Towards Non-Interactive Zero-Knowledge for NP from LWE</strong><br/>
+                Ron D. Rothblum, Adam Sealfon, and Katerina Sotiraki<br/>
+                <em>Public Key Cryptography (PKC), 2019</em><br/>
+                Invited to <em>Journal of Cryptology, 2021</em><br/>Available at [<a href="https://eprint.iacr.org/2018/240">ePrint</a>]
+            </li>
+            <li>
+                <strong>Population Stability: Regulating Size in the Presence of an Adversary</strong><br/>
+                Shafi Goldwasser, Rafail Ostrovsky, Alessandra Scafuro, and Adam Sealfon<br/>
+                <em>Principles of Distributed Computing (PODC), 2018</em><br/>
+                Available at [<a href="https://arxiv.org/abs/1803.02540">arXiv</a>]
+            </li>
+            <li>
+                <strong>Network Oblivious Transfer</strong><br/>
+                Ranjit Kumaresan, Srinivasan Raghuraman, and Adam Sealfon<br/>
+                <em>International Cryptology Conference (CRYPTO), 2016</em><br/>
+                Available at [<a href="https://eprint.iacr.org/2016/584">ePrint</a>]
+            </li>
+            <li>
+                <strong>Shortest Paths and Distances with Differential Privacy</strong><br/>
+                Adam Sealfon<br/>
+                <em>Principles of Database Systems (PODS), 2016</em><br/>
+                <span class="highlightnote">Recipient of best student paper award</span><br/>Available at [<a href="https://arxiv.org/abs/1511.04631">arXiv</a>]
+            </li>
+            <li>
+                <strong>Truth Tellers and Liars with Fewer Questions</strong><br/>
+                Gilad Braunschvig, Alon Brutzkus, David Peleg, and Adam Sealfon<br/>
+                <em>Discrete Mathematics, 2015</em><br/>
+                
+            </li>
+            <li>
+                <strong>Fault Tolerant Additive and (μ, α)-Spanners</strong><br/>
+                Gilad Braunschvig, Shiri Chechik, David Peleg, and Adam Sealfon<br/>
+                <em>Theoretical Computer Science, 2015</em><br/>
+                
+            </li>
+            <li>
+                <strong>Agreement in Partitioned Dynamic Networks</strong><br/>
+                Adam Sealfon and Katerina Sotiraki<br/>
+                <em>Brief announcement, Distributed Computing (DISC), 2014</em><br/>
+                Available at [<a href="https://arxiv.org/abs/1408.0574">arXiv</a>]
+            </li>
+            </ul>
+        </section>
 
-
-<h1>Adam Sealfon</h1>
-
-
-<div class="profile-container">
-
-<div><img src="me.jpg" alt="Adam Sealfon" class="profile-photo"/>
-</div>
-<div class="profile-text">
-<p>I am a research scientist in the Algorithms team at <a href='https://research.google/'>Google Research</a>. 
-I am currently working on problems related to differential privacy. I am also broadly interested in 
-algorithms, cryptography, and machine learning, particularly 
-provable guarantees for data privacy, robustness and security.</p>
-<p>I received a PhD in computer science from MIT, where I was advised by 
-<a href='http://people.csail.mit.edu/shafi/'>Shafi Goldwasser</a> and was
-a member of the Theory of Computation 
-(<a href='https://toc.csail.mit.edu/'>TOC</a>) 
-and Cryptography and Information Security
-(<a href='https://toc.csail.mit.edu/cis'>CIS</a>)
-groups. I also have an AB in mathematics and an SM
-in computer science from Harvard University, where I was advised by
-<a href='https://salil.seas.harvard.edu/'>Salil Vadhan</a>.
-Before joining Google Research, I was a postdoc at UC Berkeley working with 
-<a href='https://www.stat.berkeley.edu/~jsteinhardt/'>Jacob Steinhardt</a>
-and
-<a href='https://people.eecs.berkeley.edu/~jordan/'>Michael Jordan</a>
-and affiliated with the Berkeley Artificial Intelligence Research 
-(<a href='https://bair.berkeley.edu/'>BAIR</a>) 
-group.</p>
-</div>
-</div>
-
-<tr>
-<td colspan="2">
- <h2>Publications</h2>
- See also <a href='https://dblp.uni-trier.de/pers/hd/s/Sealfon:Adam.html'>DBLP</a>
- and <a href='https://scholar.google.com/citations?user=nrlhJMcAAAAJ&hl=en'>Google Scholar</a>.
- Authors are ordered alphabetically by last name.
-
-
-<ul class="high">
-  <li>
-    <b>Individualized Privacy Accounting via Subsampling with Applications in Combinatorial Optimization</b><br/>
-    Badih Ghazi, Pritish Kamath, Ravi Kumar, Pasin Manurangsi and Adam Sealfon<br/>
-    <i>International Conference on Machine Learning (ICML) 2024</i><br/>
-    Available at [<a href='https://arxiv.org/pdf/2405.18534'>arXiv</a>]
-  </li>
-
-  <li>
-    <b>Summary Reports Optimization in the Privacy Sandbox Attribution Reporting API</b><br/>
-    Hidayet Aksu, Badih Ghazi, Pritish Kamath, Ravi Kumar, Pasin Manurangsi, Adam Sealfon and Avinash V. Varadarajan<br/>
-    <i>Proceedings on Privacy Enhancing Technologies Symposium (PoPETS) 2024</i><br/>
-    Available at [<a href='https://arxiv.org/pdf/2311.13586'>arXiv</a>]
-  </li>
-
-  <li>
-    <b>Scan, Shuffle, Rescan: Machine-Assisted Election Audits With Untrusted Scanners</b><br/>
-    Douglas W. Jones, Sunoo Park, Ronald L. Rivest and Adam Sealfon<br/>
-    <i>Financial Cryptography and Data Security (FC) 2024</i><br/>
-    Available at [<a href='https://eprint.iacr.org/2022/960'>ePrint</a>]
-  </li>
-
-  <li>
-    <b>On Computing Pairwise Statistics with Local Differential Privacy</b><br/>
-    Badih Ghazi, Pritish Kamath, Ravi Kumar, Pasin Manurangsi and Adam Sealfon<br/>
-    <i>Neural Information Processing Systems (NeurIPS) 2023</i><br/>
-    Available at [<a href='https://arxiv.org/pdf/2406.16305'>arXiv</a>]
-  </li>
-
-  <li>
-    <b>Synchronizable Fair Exchange</b><br/>
-    Ranjit Kumaresan, Srinivasan Raghuraman and Adam Sealfon<br/>
-    <i>Theory of Cryptography Conference (TCC) 2023</i><br/>
-    Available at [<a href=https://eprint.iacr.org/2020/976>ePrint</a>]
-  </li>
-
-  <li>
-    <b>Optimizing Hierarchical Queries for the Attribution Reporting API</b><br/>
-    Matt Dawson, Badih Ghazi, Pritish Kamath, Kapil Kumar, Ravi Kumar, Bo Luan, Pasin Manurangsi, Nishanth Mundru, Harikesh Nair, Adam Sealfon and Shengyu Zhu<br/>
-    <i>AdKDD 2023, workshop at Knowledge Discovery and Data Mining (KDD) </i><br/>
-    Available at <a href="https://arxiv.org/abs/2308.13510">[arXiv]</a>
-  </li>
-
-  <li>
-    <b>Batch Verification for Statistical Zero Knowledge Proofs</b><br/>
-    Inbar Kaslasi, Guy N. Rothblum, Ron D. Rothblum, Adam Sealfon and Prashant Nalini Vasudevan<br/>
-    <i>Theory of Cryptography Conference (TCC) 2020</i><br/>
-    Available at <a href="https://eprint.iacr.org/2020/1167">[ePrint]</a> and <a href=https://eccc.weizmann.ac.il/report/2020/147/>[ECCC]</a>
-  </li> 
-
-  <li>
-    <b>Efficiently Estimating Erd&#337;s-R&eacute;nyi Graphs with Node Differential Privacy</b><br/>
-    Adam Sealfon and Jon Ullman<br/>
-    <i>Neural Information Processing Systems (NeurIPS) 2019</i></br>
-    Invited to <i>Journal of Privacy and Confidentiality, 2021</i><br/>
-    Available at <a href="https://arxiv.org/abs/1905.10477">[arXiv]</a>
-  </li> 
-
-  <li>
-    <b>It wasn't me! Repudiability and Claimability of Ring Signatures</b><br/>
-    Sunoo Park and Adam Sealfon<br/>
-    <i>International Cryptology Conference (CRYPTO) 2019</i><br/>
-    Available at <a href="https://eprint.iacr.org/2019/135">[ePrint]</a>
-  </li>
-
-  <li>
-    <b>Towards Non-Interactive Zero-Knowledge for NP from LWE</b><br/>
-    Ron D. Rothblum, Adam Sealfon and Katerina Sotiraki<br/>
-    <i>Public Key Cryptography (PKC) 2019</i><br/>
-    Invited to <i>Journal of Cryptology, 2021</i><br/>
-    Available at <a href="https://eprint.iacr.org/2018/240">[ePrint]</a>
-  </li>
- 
-  <li>
-    <b>Population Stability: Regulating Size in the Presence of an Adversary</b><br/>
-    Shafi Goldwasser, Rafail Ostrovsky, Alessandra Scafuro and Adam Sealfon<br/>
-    <i>Principles of Distributed Computing (PODC) 2018 </i><br/>
-    Available at <a href="https://arxiv.org/abs/1803.02540">[arXiv]</a>
-  </li>
-
-  <li>
-    <b>Network Oblivious Transfer</b><br/>
-    Ranjit Kumaresan, Srinivasan Raghuraman and Adam Sealfon<br/>
-    <i>International Cryptology Conference (CRYPTO) 2016</i><br/>
-    Available at <a href="https://eprint.iacr.org/2016/584">[ePrint]</a>
-  </li>
-
-  <li>
-    <b>Shortest Paths and Distances with Differential Privacy</b><br/>
-    Adam Sealfon<br/>
-    <i>Principles of Database Systems (PODS) 2016</i><br/>
-    <b><font color="Crimson">Recipient of best student paper award</font></b><br/>
-    Available at <a href="https://arxiv.org/abs/1511.04631">[arXiv]</a>
-  </li>
-
-  <li>
-    <b>Truth Tellers and Liars with Fewer Questions</b><br/>
-    Gilad Braunschvig, Alon Brutzkus, David Peleg and Adam Sealfon<br/>
-    <i>Discrete Mathematics, 2015</i><br/>
-  </li>
-
-  <li>
-    <b>Fault Tolerant Additive and (&mu;, &alpha;)-Spanners</b><br/>
-    Gilad Braunschvig, Shiri Chechik, David Peleg and Adam Sealfon<br/>
-    <i>Theoretical Computer Science, 2015</i><br/>
-  </li>
-
-  <li>
-    <b>Agreement in Partitioned Dynamic Networks</b><br/>
-    Adam Sealfon and Katerina Sotiraki<br/>
-    Brief announcement, <i>Distributed Computing (DISC) 2014</i><br/>
-    Available at <a href="https://arxiv.org/abs/1408.0574">[arXiv]</a>
-  </li>
-</ul>
-<h3>Theses</h3>
-
-<ul class="high">
-  <li>
-    <b>Keep it secret, keep it safe: privacy, security, and robustness in an adversarial world</b><br/>
-    Adam Sealfon<br/>
-    <i>PhD thesis</i><br/>
-    Available at <a href="https://dspace.mit.edu/handle/1721.1/124090">[MIT Libraries]</a>
-  </li>
-
-  <li>
-    <b>Fault tolerant graph spanners</b><br/>
-    Adam Sealfon<br/>
-    <i>Undergraduate honors thesis</i><br/>
-  </li>
-  
-</ul>
-</td>
-</tr>
-
-
-
-</table>
-</center>
-
+        <section id="theses">
+            <h3>Theses</h3>
+            <ul class="pub-list">
+                
+            <li>
+                <strong>Keep it secret, keep it safe: privacy, security, and robustness in an adversarial world</strong><br/>
+                Adam Sealfon<br/>
+                <em>PhD thesis, Massachusetts Institute of Technology</em><br/>
+                Available at [<a href="https://dspace.mit.edu/handle/1721.1/124090">MIT Libraries</a>]
+            </li>
+            <li>
+                <strong>Fault tolerant graph spanners</strong><br/>
+                Adam Sealfon<br/>
+                <em>Undergraduate honors thesis, Harvard University</em><br/>
+                
+            </li>
+            </ul>
+        </section>
+    </main>
 </body>
 </html>
