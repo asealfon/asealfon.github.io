@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Author" content="Adam Sealfon"/>
+    <title>Adam Sealfon's homepage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>Adam Sealfon</h1>
+            <div class="profile-container">
+                <div class="profile-photo-wrapper">
+                    <img src="me.jpg" alt="Adam Sealfon" class="profile-photo"/>
+                </div>
+                <div class="profile-text">
+                    <p>I am a research scientist in the Algorithms team at <a href='https://research.google/'>Google Research</a>. 
+                    I am currently working on problems related to differential privacy. I am also broadly interested in 
+                    algorithms, cryptography, and machine learning, particularly 
+                    provable guarantees for data privacy, robustness and security.</p>
+                    
+                    <p>I received a PhD in computer science from MIT, where I was advised by 
+                    <a href='http://people.csail.mit.edu/shafi/'>Shafi Goldwasser</a> and was
+                    a member of the Theory of Computation 
+                    (<a href='https://toc.csail.mit.edu/'>TOC</a>) 
+                    and Cryptography and Information Security
+                    (<a href='https://toc.csail.mit.edu/cis'>CIS</a>)
+                    groups. I also have an AB in mathematics and an SM
+                    in computer science from Harvard University, where I was advised by
+                    <a href='https://salil.seas.harvard.edu/'>Salil Vadhan</a>.
+                    Before joining Google Research, I was a postdoc at UC Berkeley working with 
+                    <a href='https://www.stat.berkeley.edu/~jsteinhardt/'>Jacob Steinhardt</a>
+                    and
+                    <a href='https://people.eecs.berkeley.edu/~jordan/'>Michael Jordan</a>
+                    and affiliated with the Berkeley Artificial Intelligence Research 
+                    (<a href='https://bair.berkeley.edu/'>BAIR</a>) 
+                    group.</p>
+                </div>
+            </div>
+        </header>
+
+        <section id="publications">
+            <h2>Publications</h2>
+            <p>See also <a href='https://dblp.uni-trier.de/pers/hd/s/Sealfon:Adam.html'>DBLP</a>
+            and <a href='https://scholar.google.com/citations?user=nrlhJMcAAAAJ&hl=en'>Google Scholar</a>.<br/>
+            <small>Authors are ordered alphabetically by last name.</small></p>
+            <ul class="pub-list">
+                {{publications}}
+            </ul>
+        </section>
+
+        <section id="theses">
+            <h3>Theses</h3>
+            <ul class="pub-list">
+                {{theses}}
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
